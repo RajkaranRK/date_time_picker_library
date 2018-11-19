@@ -10,6 +10,8 @@ import com.example.dell_parangat.datetimepicker.databinding.ActivityMainBinding;
 import com.rajkaranrk.date.callback.DateTimeCallback;
 import com.rajkaranrk.date.dialog.DatePickerDialog;
 import com.rajkaranrk.date.dialog.DateTimePickerDialog;
+import com.rajkaranrk.date.dialog.TimePickerDialog;
+
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 
@@ -43,10 +45,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 openDateTimePickerDialog();
                 break;
             case R.id.time_dialog_btn:
+                openTimePickerDialog();
                 break;
         }
     }
 
+    private void openTimePickerDialog(){
+        TimePickerDialog dialog = new TimePickerDialog();
+        dialog.show(mFragmentManager,"Dialog");
+    }
     private void openDatePickerDialog(){
         DatePickerDialog dialog = new DatePickerDialog();
         dialog.registerDialog(this);
