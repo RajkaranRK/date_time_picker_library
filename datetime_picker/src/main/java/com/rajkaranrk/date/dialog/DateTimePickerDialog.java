@@ -29,6 +29,7 @@ public final class DateTimePickerDialog extends AppCompatDialogFragment {
     private DateTimeCallback mCallback;
     private Calendar maxCal;
     private Calendar minCal;
+    private String TAG = "DateTimePickerDialog";
 
 
     @Override
@@ -172,7 +173,6 @@ public final class DateTimePickerDialog extends AppCompatDialogFragment {
             mCalendar.set(Calendar.YEAR,year);
             mCalendar.set(Calendar.MONTH,monthOfYear);
             mCalendar.set(Calendar.DAY_OF_MONTH,dayOfMonth);
-
         }
     };
 
@@ -188,7 +188,7 @@ public final class DateTimePickerDialog extends AppCompatDialogFragment {
         this.dismiss();
     }
 
-    private String TAG = "DateTimePickerDialog";
+
 
 
 }
