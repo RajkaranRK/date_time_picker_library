@@ -3,4 +3,6 @@
     <string name="date_time">Date Time</string>
     <string name="time">Time</string>
     <string name="date">Date</string>
+    <string name="ok">Ok</string>
+    <string name="cancel">Cancel</string>
 </resources>
